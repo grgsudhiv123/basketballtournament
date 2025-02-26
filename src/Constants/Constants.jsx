@@ -18,7 +18,7 @@ export const Logos = {
 }
 
 
-export const Texts = {
+export const BoldText = {
     Beyond : Beyond,
     Limits : Limits,
 }
