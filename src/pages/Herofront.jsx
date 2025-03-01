@@ -1,8 +1,11 @@
-import {videos, Logos, BoldText} from "../Constants/Constants";
+import {videos, Logos, BoldText, imageBskt} from "../Constants/Constants";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import img1 from "../assets/text/Untitled/BEYOND.SVG"
+
+
+import BackgroundSVG from "../Constants/BackgroundSVG";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -35,76 +38,79 @@ const Herofront = () => {
         gsap.fromTo(
             ".fade",
             {
+                
                 opacity:0,
             },{
                 opacity:1,
                 delay:1/2,
-                duration:5,
+                duration:1,
 
             }
         )
 
+        gsap.fromTo(
+            ".heroImg",
+            { 
+                x: 300, 
+                opacity: 0 
+            }, // Start position: Right (200px) & invisible
+            { 
+                x: 0, 
+                opacity: 1, 
+                duration: 2, 
+                ease: "power2.out" } // End position: Original with fade-in
+            );
         
+        gsap.fromTo(
+            ".textFooter",
+            { 
+                y: 100, 
+                opacity: 0 
+            }, // Start position: Right (200px) & invisible
+            { 
+                y: 0, 
+                opacity: 1, 
+                duration: 1, 
+                ease: "power2.out" } // End position: Original with fade-in
+            );
+
+
+    
         gsap.fromTo(
             '.typing-effect-xl',
             {
                 width:'0%',
             },{
                 width:'100%',
-                duration:10,
-                ease:'step(1000)',
-                delay:2,
+                duration:3,
+                ease:'step(900)',
+                delay:1,
             }
         )
 
-        gsap.to (
-            ".rotate",{
-                rotation : 360,
-                // duration : 10,
-                // ease : 'none',
-            }
-        )
-
-        // gsap.fromTo(
-        //     '.typing-effect',
-        //     {
-        //         width:'0%',
-        //     },{
-        //         width:'100%',
-        //         duration:5,
-        //         ease:'step(100)',
-        //         delay:1,
-        //     }
-        // )
     }, [])
   return (
-    <div className="relative max-w-screen h-screen">
-        {/* <div className="absolute max-w-screen-lg mx-auto top-10 rotate">
-            <img src={Logos.bsktBallLogo} alt="" className="w-20 h-20"/>
-        </div> */}
-        <div className="">
-            <video
-                ref={videoRef}
-                className="absolute w-full h-screen object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
-            >
-                <source
-                src={videos.heroPage}
-                type="video/mp4"
-                />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div className="fixed  w-full h-full flex flex-col max-md:flex-wrap gap-5 xl:gap-10 xl:top-5 z-10 text-white fade">
-            <div className="flex-1 flex flex-col justify-end items-center">
-                <img src={BoldText.Beyond} alt="beyond" className="max-sm:w-[300px] xl:w-[1000px] "/>     
-                <img src={BoldText.Limits} alt="" className="max-sm:w-[200px] xl:w-[500px]"/>
+    <div className="max-w-screen h-screen m-0">
+        <div className="relative bg-contain w-full h-full">
+            <BackgroundSVG/>
+            <div className=" w-full h-full flex flex-col justify-center max-md:flex-wrap gap-5 xl:gap-0 xl:top-5 text-white fade z-5">
+            <div className="relative flex flex-row justify-end items-center max-w-screen-2xl mx-auto overflow-visible">
+                {/* Position the text element with negative margin or absolute positioning to create overlap */}
+                <div className=" whitespace-nowrap flex flex-col justify-start items-start w-fit uppercase font-bruce xl:typing-effectxl z-20 relative">
+                    <h1 className="text-white text-sm xl:text-lg border-yellow-400 fade">the ultimate</h1>
+                    <h1 className="text-yellow-400 text-6xl xl:text-8xl fade font-extrabold">playoff</h1>
+                    <h1 className="text-white text-[10px] xl:text-xs overflow-hidden whitespace-nowrap typing-effect typing-effect-xl">Transform Your Tomorrow, Today</h1>
+                </div>
+                
+                {/* Adjust the position of the image container */}
+                <div className="heroImg flex relative -ml-48"> {/* Added negative margin to create overlap */}
+                <img src={imageBskt.belowfeet} alt="" className="max-sm:w-[200px] xl:w-[700px] z-20 pb-14"/>
+                </div>
             </div>
-            <div className="flex-1 text-center">
-                <p className="pt-44 font-bruce text-xs xl:text-lg ">{`The ball doesn't lie put in the work,`}</p>
+            
+            <div className="textFooter w-screen-2xl mx-auto">
+                <p className=" font-bruce text-xs xl:text-lg text-slate-700">{`The ball doesn't lie put in the work,`}</p>
+            </div>
             </div>
         </div>
     </div>
