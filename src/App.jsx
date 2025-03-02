@@ -19,8 +19,7 @@ function App() {
         <section >
           <Herofront />
         </section>
-        <section className=" max-w-screen overflow-hidden bg-cover overflow-x-hidden bg-transparent">
-          <section className="">
+          <section id="Aboutus" className="">
             <Hero2nd />
           </section>
           <section className="bg-slate-500">
@@ -35,7 +34,6 @@ function App() {
           <section className="bg-slate-500">
             <Footer />
           </section>
-        </section>
      </section>
     </>
   )

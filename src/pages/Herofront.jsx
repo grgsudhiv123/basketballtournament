@@ -90,7 +90,7 @@ const Herofront = () => {
 
     }, [])
   return (
-    <div className="max-w-screen h-screen m-0">
+    <div id="home" className="max-w-screen h-screen m-0">
         <div className="relative bg-contain w-full h-full">
             <BackgroundSVG/>
             <div className=" w-full h-full flex flex-col justify-center max-md:flex-wrap gap-5 xl:gap-0 xl:top-5 text-white fade z-5">
@@ -108,8 +108,8 @@ const Herofront = () => {
                 </div>
             </div>
             
-            <div className="textFooter w-screen-2xl mx-auto">
-                <p className=" font-bruce text-xs xl:text-lg text-slate-700">{`The ball doesn't lie put in the work,`}</p>
+            <div className="textFooter w-screen-2xl mx-auto mb-10">
+                <p className=" font-bruce text-xs xl:text-lg text-slate-700">{`The ball doesn't lie, if you put in the work,`}</p>
             </div>
             </div>
         </div>
