@@ -8,7 +8,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'bruce' : ['BruceForever'],
+        'bruce': ['BruceForever', 'sans-serif'],
+        'lakers': ['LakersTextured', 'sans-serif'],
+        'bulls': ['NBABulls', 'sans-serif'],
         montserrat: ["Montserrat", "sans-serif"],
         palanquin: ["Palanquin", "sans-serif"],
       },

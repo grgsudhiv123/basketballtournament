@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-     <section className="w-screen h-auto m-0 top-0 bottom-0">
+     <section className="w-screen h-auto m-0 top-0 bottom-0 overflow-x-hidden">
       <section>
         <Navbar />
       </section>
@@ -22,7 +22,7 @@ function App() {
           <section id="Aboutus" className="">
             <Hero2nd />
           </section>
-          <section className="bg-slate-500">
+          <section className="">
             <Heromid />
           </section>
           <section className="bg-slate-500">

@@ -4,6 +4,10 @@ import Buttons from "../components/Buttons"
 import { useEffect } from "react"
 import gsap from "gsap"
 
+
+import {ScrollTrigger} from "gsap/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
+
 const Hero2nd = () => {
         useEffect(()=> {
         gsap.fromTo(
@@ -14,7 +18,13 @@ const Hero2nd = () => {
                 x: 0, 
                 opacity: 1, 
                 duration: 2, 
-                ease: "power2.out"   
+                ease: "power3.out",
+                scrollTrigger:{
+                    trigger:".box1",
+                    start:"top 80%",
+                    end:"top 50%",
+                    scrub:2,
+                }   
             }
         )
 
@@ -26,7 +36,14 @@ const Hero2nd = () => {
                 x: 0, 
                 opacity: 1, 
                 duration: 2, 
-                ease: "power2.out"   
+                delay:1, 
+                ease: "power2.out",
+                scrollTrigger:{
+                    trigger:".bigNum1",
+                    start:"top 50%",
+                    end:"top 50%",
+                    scrub:2,
+                }    
             }
         )
 
@@ -37,35 +54,53 @@ const Hero2nd = () => {
             }, {
                 y: 0, 
                 opacity: 1, 
-                duration: 2, 
-                ease: "power2.out"   
+                duration: 2,
+                delay:1, 
+                ease: "power2.out",
+                scrollTrigger:{
+                    trigger:".bigNum2",
+                    start:"top 50%",
+                    end:"top 50%",
+                    scrub:2,
+                }    
             }
         )
 
         gsap.fromTo(
             '.yellowBox', {
                 opacity : 0, 
-                y : -300
+                y : -50
             }, {
                 y: 0, 
                 opacity: 1, 
                 duration: 3, 
-                ease: "power2.out"   
+                ease: "power2.out",
+                scrollTrigger:{
+                    trigger:".yellowBox",
+                    start:"top 80%",
+                    end:"top 80%",
+                    scrub:2,
+                }    
             }
         )
 
         gsap.fromTo(
             '.imageDunk', {
                 opacity : 0, 
-                y : 100
+                y : 200
             }, {
                 y: 0, 
                 opacity: 1, 
-                duration: 3, 
-                ease: "power2.out"   
+                duration: 2, 
+                ease: "power2.out",
+                scrollTrigger:{
+                    trigger:".imageDunk",
+                    start:"top 80%",
+                    end:"top 50%",
+                    scrub:1,
+                }   
             }
         )
-
     },[])
   return (
         <div className="relative h-screen w-full">
@@ -80,8 +115,10 @@ const Hero2nd = () => {
                 <div className="relative flex-1 flex items-end">
                 <div className="absolute bg-yellow-400 w-96 h-full transform translate-x-1/3 top-0 -z-0 shadow-xl yellowBox"></div>
                     <img src={imageBskt.dunk} alt="holding a ball" className="w-[500px] object-contain z-10 imageDunk"/>
-                    <h1 className="absolute top-0 right-[120px]  text-[200px] font-montserrat font-extrabold text-white bigNum1">1</h1>
-                    <h1 className="absolute top-0 right-[7px] text-[200px] font-montserrat font-extrabold text-yellow-400 bigNum2">3</h1>
+                    <div className="absolute top-0 -right-[4px] flex gap-3">
+                        <h1 className="text-[200px] font-bulls font-extrabold text-white bigNum1">1</h1>
+                        <h1 className="text-[200px] font-bulls font-extrabold text-yellow-400 bigNum2">3</h1>
+                    </div>
                 </div>
             </div>
         </div>
