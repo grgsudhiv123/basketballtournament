@@ -1,4 +1,4 @@
-import {videos, Logos, BoldText, imageBskt} from "../Constants/Constants";
+import {imageBskt} from "../Constants/Constants";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,29 +11,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Herofront = () => {
 
-    const videoRef = useRef(null);
     useEffect(()=>{
-        const video = videoRef.current;
-        if (video) {
-            video.muted = true;
-            video.playsInline = false;
-        }
-
-        const playVideo = async () => {
-            try{
-                await video.play();
-            } catch(error) {
-                console.error("Autoplay failed : ", error)
-            }
-        }
-
-        gsap.delayedCall(0.5, playVideo)
- 
-        gsap.fromTo(
-            videoRef.current,
-            {opacity:0},
-            {opacity:1, scale: 1, duration:5, delay:2, ease:'power2.out'}
-        )
 
         gsap.fromTo(
             ".fade",

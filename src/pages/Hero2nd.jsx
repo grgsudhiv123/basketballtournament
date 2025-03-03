@@ -24,6 +24,7 @@ const Hero2nd = () => {
                     start:"top 80%",
                     end:"top 50%",
                     scrub:2,
+                    once:true,
                 }   
             }
         )
@@ -43,6 +44,7 @@ const Hero2nd = () => {
                     start:"top 50%",
                     end:"top 50%",
                     scrub:2,
+                    once:true,
                 }    
             }
         )
@@ -62,6 +64,7 @@ const Hero2nd = () => {
                     start:"top 50%",
                     end:"top 50%",
                     scrub:2,
+                    once:true,
                 }    
             }
         )
@@ -80,6 +83,7 @@ const Hero2nd = () => {
                     start:"top 80%",
                     end:"top 80%",
                     scrub:2,
+                    once:true,
                 }    
             }
         )
@@ -98,6 +102,7 @@ const Hero2nd = () => {
                     start:"top 80%",
                     end:"top 50%",
                     scrub:1,
+                    once:true,
                 }   
             }
         )

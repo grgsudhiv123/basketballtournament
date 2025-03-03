@@ -1,7 +1,7 @@
 import Hero2nd from "./pages/Hero2nd"
 
 import FillupForms from "./pages/FillupForms"
-import Sponsers from "./pages/Sponsers"
+import Tournament from "./pages/Tournament"
 import Herofront from "./pages/Herofront"
 import Heromid from "./pages/Heromid"
 import Footer from "./pages/Footer"
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-     <section className="w-screen h-auto m-0 top-0 bottom-0 overflow-x-hidden">
+     <section className="w-screen h-auto m-0 top-0 bottom-0 overflow-hidden">
       <section>
         <Navbar />
       </section>
@@ -25,8 +25,8 @@ function App() {
           <section className="">
             <Heromid />
           </section>
-          <section className="bg-slate-500">
-            <Sponsers />
+          <section className="">
+            <Tournament />
           </section>
           <section className="bg-slate-500">
             <FillupForms />
