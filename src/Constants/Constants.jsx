@@ -13,7 +13,7 @@ import curry from "../assets/images/curry.png"
 import durant from "../assets/images/durant.png"
 import harden from "../assets/images/harden.png"
 
-
+import teamLogo from "../assets/images/logo.png"
 
 export const videos = {
     heroPage : HeroFront,
@@ -29,6 +29,7 @@ export const imageBskt = {
 
 export const Logos = {
     bsktBallLogo : logo,
+    teamLogo : teamLogo,
 }
 
 

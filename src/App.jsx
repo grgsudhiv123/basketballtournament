@@ -6,7 +6,7 @@ import Herofront from "./pages/Herofront"
 import Heromid from "./pages/Heromid"
 import Footer from "./pages/Footer"
 import Navbar from "./components/Navbar"
-
+import Stats from "./pages/Stats"
 
 function App() {
 
@@ -28,9 +28,12 @@ function App() {
           <section className="">
             <Tournament />
           </section>
-          <section className="bg-slate-500">
-            <FillupForms />
+          <section>
+            <Stats />
           </section>
+          {/* <section className="bg-slate-500">
+            <FillupForms />
+          </section> */}
           <section className="bg-slate-500">
             <Footer />
           </section>

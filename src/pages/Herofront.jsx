@@ -76,18 +76,18 @@ const Herofront = () => {
                 {/* Position the text element with negative margin or absolute positioning to create overlap */}
                 <div className=" whitespace-nowrap flex flex-col justify-start items-start w-fit uppercase font-bruce xl:typing-effectxl z-20 relative">
                     <h1 className="text-white text-sm xl:text-lg border-yellow-400 fade">the ultimate</h1>
-                    <h1 className="text-yellow-400 text-6xl xl:text-8xl fade font-extrabold">playoff</h1>
+                    <h1 className="text-yellow-400 text-6xl xl:text-7xl fade font-extrabold">playoff</h1>
                     <h1 className="text-white text-[10px] xl:text-xs overflow-hidden whitespace-nowrap typing-effect typing-effect-xl">Transform Your Tomorrow, Today</h1>
                 </div>
                 
                 {/* Adjust the position of the image container */}
                 <div className="heroImg flex relative -ml-48"> {/* Added negative margin to create overlap */}
-                <img src={imageBskt.belowfeet} alt="" className="max-sm:w-[200px] xl:w-[700px] z-20 pb-14"/>
+                <img src={imageBskt.belowfeet} alt="" className="max-sm:w-[200px] xl:w-[600px] z-20 pb-14"/>
                 </div>
             </div>
             
             <div className="textFooter w-screen-2xl mx-auto mb-10">
-                <p className=" font-bruce text-xs xl:text-lg text-slate-700">{`The ball doesn't lie, if you put in the work,`}</p>
+                <p className=" font-bruce text-xs xl:text-md text-slate-700">{`The ball doesn't lie, if you put in the work,`}</p>
             </div>
             </div>
         </div>

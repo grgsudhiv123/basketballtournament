@@ -1,3 +1,12 @@
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../components/ui/accordion"
+
+
+
 
 const SponsersCards = ({name, img, position, team}) => {
   return (
@@ -10,9 +19,20 @@ const SponsersCards = ({name, img, position, team}) => {
             className="w-full h-full object-cover shadow-md scale-125 hover:scale-100 duration-300 ease-in-out"
             />
           </div>
-          <div className="flex flex-col p-2">
-            <h1 className="text-2xl font-extrabold font-bulls tracking-widest text-gray-200">{name}</h1>
-            <h2 className="text-gray-200 font-palanquin text-sm tracking-widest uppercase font-bold">{position}</h2>
+          <div className="relative flex flex-col p-2 ">
+            <Accordion type="single" collapsible className="">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>
+                  <div>
+                    <h1 className="text-2xl font-extrabold font-bulls tracking-widest text-gray-200">{name}</h1>
+                    <h2 className="text-gray-200 font-palanquin text-sm tracking-widest uppercase font-bold">{position}</h2>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <h2 className="text-gray-200 font-palanquin text-sm tracking-widest uppercase font-bold">{team}</h2>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
     </div>
