@@ -1,7 +1,7 @@
 
 const BackgroundSVG = () => {
   return (
-    <div className="absolute background-container h-screen w-full">
+    <div className="absolute invisible xl:visible background-container h-screen w-full">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 200 1200 600">
             <rect width="1200" height="800" fill="#648899"/>
             

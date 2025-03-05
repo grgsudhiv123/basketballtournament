@@ -2,7 +2,7 @@ import { useContext, createContext, useState } from "react";
 
 const BasketBallContext = createContext();
 
-export const UseBasketballContext = () => useContext(BasketBallContext)
+export const useBasketballContext = () => useContext(BasketBallContext)
 
 const BasketBallContextProvider = ({children}) => {
     const [toggle, setToggle] = useState(false)

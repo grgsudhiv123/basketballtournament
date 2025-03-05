@@ -4,16 +4,27 @@ import gsap from "gsap";
 import {Logos} from "../Constants/Constants"
 import { Menu} from "lucide-react"
 
-import {UseBasketballContext} from "../context/basketballContext"
+import {useBasketballContext} from "../context/basketballContext"
 
 const Navbar = () => {
-    const {toggle,setToggle} = UseBasketballContext()
-            useEffect(() => {
-        console.log("Toggle State Changed:", toggle);
-    }, [toggle]); // Log whenever `toggle` changes
+    const {toggle,setToggle} = useBasketballContext()
+    
     const handleClick = () => {
         setToggle((prev) => !prev); 
     };
+    
+    useEffect(() => {
+        if(toggle) {
+            // document.body.style.pointerEvents = 'none'
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'auto'
+        }
+        return ()=>(document.body.classList.remove = 'no-scroll')
+    }, [toggle]);
+
+
+
     useEffect(()=> {
         gsap.fromTo(
             '.navbarAni', {
