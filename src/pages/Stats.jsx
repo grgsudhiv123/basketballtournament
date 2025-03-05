@@ -65,8 +65,8 @@ const Stats = () => {
         )
     },[])
   return (
-    <div className="w-full h-auto xl:h-28 mx-5 xl:mx-0 my-16 xl:my-28">
-        <div className="max-w-screen-lg mx-auto h-full flex flex-col xl:flex-row  justify-between gap-16">
+    <div className="w-full h-auto xl:h-28 mx-5 xl:mx-0 my-10 xl:my-28">
+        <div className="max-w-screen-lg mx-auto h-full flex flex-col xl:flex-row  justify-between gap-10 xl:gap-16">
             <div className="border-l-4 border-orange-400 flex flex-col justify-center flex-1 p-4 bg-gradient-to-r from-yellow-100 to-transparent div1">
                 <h1 className="text-4xl font-lakers tracking-widest">Boston Celtics</h1>
                 <p className="text-sm uppercase text-yellow-600 font-bulls tracking-widest font-bold">nba winner 2024</p>

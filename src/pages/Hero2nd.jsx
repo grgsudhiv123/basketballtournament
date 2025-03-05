@@ -107,19 +107,19 @@ const Hero2nd = () => {
         )
     },[])
   return (
-        <div className="relative h-screen w-full my-10">
-            <div className="max-w-screen-xl mx-auto h-screen flex flex-col xl:flex-row items-center bg-slate-400 p-5 xl:p-0">
-                <div className="flex-1 flex flex-col gap-5 box1">
+        <div className="relative h-screen w-full mb-10 overflow-hidden">
+            <div className="max-w-screen-xl mx-auto h-screen flex flex-col xl:flex-row items-center px-5 xl:p-0 gap-10 xl:gap-0">
+                <div className="flex-1 flex flex-col gap-5 justify-end xl:justify-center box1">
                     <h1 className="font-bruce text-sm xl:text-xl font-bold uppercase">How we <span className="block text-4xl xl:text-7xl text-gray-500">started</span> our journey ?</h1>
-                    <p className="text-md xl:text-lg font-montserrat text-justify">We are one of the newest basketball community in the town. Our aim is to become the most renowned basketball community across the country and to promote the players.</p>
+                    <p className="text-sm xl:text-lg font-montserrat text-justify">We are one of the newest basketball community in the town. Our aim is to become the most renowned basketball community across the country and to promote the players.</p>
                     <div className="w-1/3">
                         <Buttons name={"Read more"}/>
                     </div>
                 </div>
                 <div className="relative flex-1 flex items-end ">
                 <div className="absolute bg-yellow-400 w-[60%] xl:w-96 h-full translate-x-1/3 transform xl:translate-x-1/3 top-0 -z-0 shadow-xl yellowBox "></div>
-                    <img src={imageBskt.dunk} alt="holding a ball" className="w-[500px] object-contain z-10 imageDunk"/>
-                    <div className="absolute top-0 -right-[16px] xl:right-[50px] flex gap-1 xl:gap-3">
+                    <img src={imageBskt.dunk} alt="holding a ball" className="w-[300px] xl:w-[500px] object-contain z-10 imageDunk"/>
+                    <div className="absolute top-0 -right-[16px] xl:-right-[0px] flex gap-1 xl:gap-3">
                         <h1 className="text-[120px] xl:text-[200px] font-bulls font-extrabold text-white bigNum1">1</h1>
                         <h1 className="text-[120px] xl:text-[200px] font-bulls font-extrabold text-yellow-400 bigNum2">3</h1>
                     </div>

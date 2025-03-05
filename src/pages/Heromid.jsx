@@ -88,10 +88,10 @@ const Hermoid =()=>{
   },[])
   return<>
   
-  <div className="relative w-full h-[900px]  xl:h-[1000px] flex my-10">
+  <div className="relative w-full h-[800px]  xl:h-[1000px] flex my-10">
     <div className="w-1/2 flex items-center h-full">
     <div className="relative bg-yellow-500 h-[80%] w-[90%] xl:w-[60%]">
-      <div className="absolute top-0 xl:top-0 -right-32 font-bold text-[150px] xl:text-[250px] font-bulls text-yellow-400 z-10 number"><span  className="text-white">3</span>0</div>
+      <div className="absolute top-0 xl:top-0 -right-24 font-bold text-[120px] xl:text-[250px] font-bulls text-yellow-400 z-10 number"><span  className="text-white">3</span>0</div>
     </div>
     </div>
     <div className="w-full xl:w-full bg-slate-800">
@@ -99,7 +99,7 @@ const Hermoid =()=>{
     </div>
     <div className="absolute w-full h-full z-20 m-0">
       <div className="relative w-full h-full">
-        <div className=" max-w-screen-lg mx-auto h-full flex items-start mt-80 slidebar">
+        <div className=" max-w-screen-lg mx-auto h-full flex items-start mt-64 xl:mt-80 slidebar">
           <SponsersSlider/>
         </div>
       </div>

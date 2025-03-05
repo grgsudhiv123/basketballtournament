@@ -1,6 +1,6 @@
 import Hero2nd from "./pages/Hero2nd"
 
-import FillupForms from "./pages/FillupForms"
+// import FillupForms from "./pages/FillupForms"
 import Tournament from "./pages/Tournament"
 import Herofront from "./pages/Herofront"
 import Heromid from "./pages/Heromid"
@@ -8,13 +8,16 @@ import Footer from "./pages/Footer"
 import Navbar from "./components/Navbar"
 import Stats from "./pages/Stats"
 
+import Sidebar from "../src/components/Sidebar"
+
 function App() {
 
   return (
     <>
-     <section className="w-screen h-auto m-0 top-0 bottom-0 overflow-hidden">
+     <section className="w-screen h-auto m-0 top-0 bottom-0 overflow-x-hidden">
       <section>
         <Navbar />
+        <Sidebar />
       </section>
         <section >
           <Herofront />

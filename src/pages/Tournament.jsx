@@ -154,7 +154,7 @@ const Tournament = () => {
         </div>
         <div className="relative flex-1 bg-slate-400 flex items-center justify-around">
           <div className="w-4/5 five">
-          <img src={imageBskt.tournament} alt="" className="w-[90%] ml-10 object-cover"/>
+          <img src={imageBskt.tournament} alt="" className="w-[80%] xl:w-[90%] ml-16 xl:ml-10 object-cover"/>
           </div>
           <div className="w-1/5 h-fit my-auto xl:mt-64">
             <p className="absolute -rotate-90 top-20 xl:top-36 -right-5 xl:-right-10 text-2xl xl:text-5xl font-bruce font-extrabold uppercase text-slate-100 tracking-widest six">Glory</p>
