@@ -39,7 +39,7 @@ const Sidebar = () => {
                             <div className="text-slate-400 text-xs hover:text-slate-200 ease-in-out duration-200 active:text-slate-400"><a href="Aboutus">About Us</a></div>
                             <div className="text-slate-400 text-xs hover:text-slate-200 ease-in-out duration-200 active:text-slate-400"><a href="#">Contact</a></div>
                         </div>
-                        <div className="w-3/4 mx-auto flex justify-center mb-20 ">
+                        <div className="w-3/4 mx-auto flex justify-center mb-44 ">
                             <Buttons name="Register Team"/>                
                         </div>
                     </div>

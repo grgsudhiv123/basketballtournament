@@ -68,7 +68,7 @@ const Herofront = () => {
 
     }, [])
   return (
-    <div id="home" className="max-w-screen h-screen m-0 bg-gradient-to-b from-[#648899] via-[#648899]  to-white ">
+    <div id="home" className="max-w-screen h-[700px] xl:h-screen m-0 bg-gradient-to-b from-[#648899] via-[#648899]  to-white ">
         <div className="relative bg-contain w-full h-full">
             <BackgroundSVG/>
             <div className=" w-full h-full flex flex-col justify-center max-md:flex-wrap gap-10 xl:gap-0 xl:top-5 text-white fade z-5">
