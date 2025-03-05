@@ -47,7 +47,7 @@ const Footer = () => {
           <div className="flex-1 p-2 xl:p-5 flex flex-col justify-center items-center font-montesrrat text-slate-200 tracking-wide">
             <p className="text-xs xl:text-[16px]">© Copyright 2025. by NaiveGuy</p>
           </div>
-          <div className="flex-1 p-2 xl:p-5 flex flex-row font-montesrrat items-center justify-center gap-5">
+          <div className="flex-1 pb-10 pt-5 xl:p-5 flex flex-row font-montesrrat items-center justify-center gap-5">
             <FaFacebookF  className="text-slate-200 hover:bg-pink-700 text-3xl xl:text-4xl bg-cyan-800 rounded-full duration-300 ease-in-out p-2 cursor-pointer" />
             <FaInstagram   className="text-slate-200 hover:bg-pink-700 text-3xl xl:text-4xl bg-cyan-800 rounded-full duration-300 ease-in-out p-2 cursor-pointer" />
             <FaTwitter className="text-slate-200 hover:bg-pink-700 text-3xl xl:text-4xl bg-cyan-800 rounded-full duration-300 ease-in-out p-2 cursor-pointer" />

@@ -48,7 +48,7 @@ const Herofront = () => {
             { 
                 y: 0, 
                 opacity: 1, 
-                duration: 1, 
+                duration: 2, 
                 ease: "power2.out" } // End position: Original with fade-in
             );
 
@@ -68,10 +68,10 @@ const Herofront = () => {
 
     }, [])
   return (
-    <div id="home" className="max-w-screen h-screen m-0 bg-slate-600">
+    <div id="home" className="max-w-screen h-screen m-0 bg-gradient-to-b from-[#648899] via-[#648899]  to-white ">
         <div className="relative bg-contain w-full h-full">
             <BackgroundSVG/>
-            <div className=" w-full h-full flex flex-col justify-center max-md:flex-wrap gap-32 xl:gap-0 xl:top-5 text-white fade z-5">
+            <div className=" w-full h-full flex flex-col justify-center max-md:flex-wrap gap-10 xl:gap-0 xl:top-5 text-white fade z-5">
             <div className="relative flex flex-col-reverse xl:flex-row justify-end items-center max-w-screen-2xl mx-auto overflow-visible">
                 {/* Position the text element with negative margin or absolute positioning to create overlap */}
                 <div className=" whitespace-nowrap flex flex-col justify-start items-start w-fit uppercase font-bruce xl:typing-effectxl z-20 relative">
@@ -86,8 +86,8 @@ const Herofront = () => {
                 </div>
             </div>
             
-            <div className="textFooter w-screen-2xl mx-auto xl:mb-10 ">
-                <p className=" font-bruce text-[9px] xl:text-[16px] xl:text-slate-700">{`The ball doesn't lie, if you put in the work,`}</p>
+            <div className="textFooter w-screen-2xl mx-auto mb-0 xl:mb-10 ">
+                <p className=" font-bruce text-[9px] xl:text-[16px] text-slate-600">{`The ball doesn't lie, if you put in the work,`}</p>
             </div>
             </div>
         </div>

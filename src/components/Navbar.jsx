@@ -40,7 +40,7 @@ const Navbar = () => {
     },[])
   return (
     <div className="bg-[#648899] w-screen">
-        <div className="relative max-w-screen-xl mx-auto flex flex-row justify-between items-center p-2 xl:p-3 md:navbarAni">
+        <div className="relative max-w-screen-xl mx-2 xl:mx-auto flex flex-row justify-between items-center p-2 xl:p-3 md:navbarAni">
             <img src={Logos.teamLogo} alt="" className="w-12 xl:w-24"/>
             <ul className="hidden md:flex flex-row gap-20 uppercase font-bruce text-sm ">
                 <li><a href="home" className="text-slate-200 hover:text-slate-400 ease-in-out duration-200 active:text-slate-300">Home</a></li>
